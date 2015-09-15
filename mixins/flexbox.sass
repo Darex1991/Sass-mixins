@@ -1,0 +1,72 @@
+=flexbox
+  display: -ms-flexbox
+  display: -webkit-flex
+  display: flex
+
+=flexbox-inline
+  display: -ms-inline-flexbox
+  display: -webkit-inline-flex
+  display: inline-flex
+
+=flex($var)
+  @each $vendor in ('-ms-', '-webkit-', '')
+    #{$vendor}flex: $var
+
+=flex-align-items($var)
+  @if $var == 'flex-end'
+    -ms-flex-align: end
+  @else if $var == 'flex-start'
+    -ms-flex-align: start
+  @else
+    -ms-flex-align: $var
+  -webkit-align-items: $var
+  align-items: $var
+
+=flex-align-self($var)
+  @if $var == 'flex-end'
+    -ms-flex-item-align: end
+  @else if $var == 'flex-start'
+    -ms-flex-item-align: start
+  @else
+    -ms-flex-item-align: $var
+  -webkit-align-self: $var
+  align-self: $var
+
+=flex-direction($var)
+  @each $vendor in ('-ms-', '-webkit-', '')
+    #{$vendor}flex-direction: $var
+
+=flex-justify-content($var)
+  @if $var == 'flex-end'
+    -ms-flex-pack: end
+  @else if $var == 'flex-start'
+    -ms-flex-pack: start
+  @else if $var == 'space-between'
+    -ms-flex-pack: justify
+  @else
+    -ms-flex-pack: $var
+  -webkit-justify-content: $var
+  justify-content: $var
+
+=flex-wrap($var)
+  @each $vendor in ('-ms-', '-webkit-', '')
+    #{$vendor}flex-wrap: $var
+
+=flex-align-content($var)
+  @if $var == 'flex-end'
+    -ms-flex-line-pack: end
+  @else if $var == 'flex-start'
+    -ms-flex-line-pack: start
+  @else
+    -ms-flex-line-pack: $var
+  -webkit-align-content: $var
+  align-content: $var
+
+=flex-order($var)
+  -ms-flex-order: $var
+  -webkit-order: $var
+  order: $var
+
+=flex-spacing
+  > *:not(:last-child)
+    margin-right: $m-half
