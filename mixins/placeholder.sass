@@ -1,4 +1,5 @@
+// http://caniuse.com/#feat=css-placeholder
 =placeholder
-  @each $vendor in ('::-webkit-input', ':-moz', '::-moz', ':-ms-input')
+  @each $vendor in ('::-webkit-input', '::-moz', ':-ms-input')
     &#{$vendor}-placeholder
       @content
