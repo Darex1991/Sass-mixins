@@ -1,0 +1,9 @@
+.table--name
+  table-layout: fixed
+
+  $widths: 300px, auto, 80px
+
+  @for $i from 1 to (length($widths) + 1)
+    th, td
+      &:nth-child(#{$i})
+        width: (nth($widths, $i))
