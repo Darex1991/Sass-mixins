@@ -4,6 +4,16 @@ Deskrypcja.
 ## Helpful links for weird cases:
 #### IE9
 [Box-shadow not displayed in table](http://stackoverflow.com/questions/5617455/box-shadow-on-ie9-doesnt-render-using-correct-css-works-on-firefox-chrome)
+#### IE10
+When using transform in keyframes, make sure to add all the values, even if they equal 0.
+```
+@keyframes close-notice
+  0%
+    +transform(translateX(-50%)) - DON'T
+    +transform(translateY(0) translateX(-50%)) - DO
+  100%
+    +transform(translateY(-200%) translateX(-50%))
+```    
 #### FireFox
 ![lol](https://raw.githubusercontent.com/Darex1991/Sass-mixins/master/assets/firefox_icons.png)
 
