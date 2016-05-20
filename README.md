@@ -2,6 +2,8 @@
 Deskrypcja.
 
 ## Helpful links for weird cases:
+#### IE
+For breaking too long strings into multiple lines, instead of `word-break: break-word` it's better to use `word-wrap: break-word`. IE supports it.
 #### IE9
 [Box-shadow not displayed in table](http://stackoverflow.com/questions/5617455/box-shadow-on-ie9-doesnt-render-using-correct-css-works-on-firefox-chrome)
 #### IE10
