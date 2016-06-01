@@ -20,6 +20,9 @@ When using transform in keyframes, make sure to add all the values, even if they
 ![lol](https://raw.githubusercontent.com/Darex1991/Sass-mixins/master/assets/firefox_icons.png)
 
 It might happen that the fonticons are jagged/broken under Windows. In that case just pick the icons from Icomoon once again.
+
+-
+The placeholder text looks a bit different in Firefox, to keep it consistent add `opacity: 1` to it.
 #### Safari
 When creating a gradient that should go to transparent, instead of `$color-transparent` it's mandatory to set it as rgba, or Safari will render it as black.
 ```
