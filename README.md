@@ -18,6 +18,8 @@ When using transform in keyframes, make sure to add all the values, even if they
   100%
     +transform(translateY(-200%) translateX(-50%))
 ```    
+
+[Flexbox cheatsheet](http://zomigi.com/blog/flexbox-syntax-for-ie-10/)
 #### FireFox
 ![lol](https://raw.githubusercontent.com/Darex1991/Sass-mixins/master/assets/firefox_icons.png)
 
