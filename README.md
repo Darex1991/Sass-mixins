@@ -32,3 +32,5 @@ background: linear-gradient(to right, $color-white 25%, rgba($color-white, 0) 65
 ```    
 #### CSS hacks
 [Tooltip line break with `&#10;`](http://stackoverflow.com/questions/358874/how-can-i-use-a-carriage-return-in-a-html-tooltip)
+
+[Nice collection of hacks](https://stackoverflow.com/questions/16348489/is-there-a-css-hack-for-safari-only-not-chrome)
