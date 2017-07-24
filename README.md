@@ -31,7 +31,12 @@ The placeholder text looks a bit different in Firefox, to keep it consistent add
 When creating a gradient that should go to transparent, instead of `$color-transparent` it's mandatory to set it as rgba, or Safari will render it as black.
 ```
 background: linear-gradient(to right, $color-white 25%, rgba($color-white, 0) 65%)
-```    
+```
+
+Good hack for Safari >= 9
+```
+@supports (-webkit-flow-into: break)
+```
 #### CSS hacks
 [Tooltip line break with `&#10;`](http://stackoverflow.com/questions/358874/how-can-i-use-a-carriage-return-in-a-html-tooltip)
 
