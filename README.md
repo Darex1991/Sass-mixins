@@ -20,6 +20,8 @@ When using transform in keyframes, make sure to add all the values, even if they
 ```    
 
 [Flexbox cheatsheet](http://zomigi.com/blog/flexbox-syntax-for-ie-10/)
+
+When `justify-content: space-between` is set, it won't work on inline (`span`) child elements, those need to be block.
 #### FireFox
 ![lol](https://raw.githubusercontent.com/Darex1991/Sass-mixins/master/assets/firefox_icons.png)
 
